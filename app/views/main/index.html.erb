@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"/>
+<head>
+	<title>Joanne Hyelee Kim</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Joanne Hyelee Kim's Portfolio"/>
+	<meta name="keywords" content="Joanne Hyelee Kim"/>
+	<link rel="stylesheet" href="animate.css">
+	<style type="text/css">
+		body {
+			background-image: url("background.png");
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+		}
+		#loading {
+			background-color: white;
+			height: 100%;
+			width: 100%;
+			position: fixed;
+			z-index: 1;
+			margin-top: 0px;
+			top: 0px;
+			text-align: center;
+		}
+/*		#loading-center{
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+		#loading-center-absolute {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			height: 200px;
+			width: 200px;
+			margin-top: -200px;
+			margin-left: -200px;
+		}*/
+		div#joanne {
+			position: absolute;
+			left: -400px;
+			margin-top: 200px;
+		}
+		div#hyelee {
+			position: absolute;
+			margin-top: 300px;
+			right: 10%;
+		}
+		div#kim {
+			position: absolute;
+			margin-top: 400px;
+			animation-delay: 3s;
+			text-align: center;
+		}
+		#joanne {
+			animation-duration: 2s;
+		}
+		#kim {
+			animation-duration: 3.5s;
+		}
+		.navbar {
+    		background: transparent;
+    		height: 200px;
+		}
+		.navbar-right {
+   			float: right;
+		}
+		@media (max-width: 543px) {
+			.navbar {
+				background: black;
+				height: 100px;
+			}
+			#picture {
+				display: none;
+			}
+		}
+		.navbar-brand>img {
+			width: 200px;
+		}
+		#left {
+/*			display: inline-block;
+			background:;
+			height: 500px;
+			width: 300px;
+			margin-left: -50px;*/
+			font-size: 2em;
+		}
+		#right {
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 200px;
+		}
+		main {
+			height: 100%;
+			background: red;
+			margin-top: 30px;
+		}
+		#picture {
+    		position:fixed;
+    		bottom:0px;
+    		left:40%;
+		}
+/*		.description {
+			font-size: 0.7em;
+		}*/
+/*		.img-responsive {
+			width: 200%;
+			height: auto;
+		}*/
+/*		img {
+			max-width: auto;
+			height: auto;
+		}	*/	
+
+	</style>
+</head>
+<body>
+
+<div id="wrapper">
+
+<div id="loading">
+	<div id="loading-center">
+		<div id="loading-center-absolute">
+			<div id="joanne"><img src="joanne.png" class="animated slideInLeft img-responsive" id="joanne"></div>
+			<div id="hyelee"><img src="hyelee.png" class="animated slideInRight img-responsive" id="hyelee"></div>
+			<div id="kim"><img src="kim.png" class="animated bounceInDown img-responsive" id="kim"></div>
+		</div>
+	</div>
+</div>
+
+	<nav>
+		<nav class="navbar navbar-custom">
+		  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" 		data-target="#exCollapsingNavbar2">
+		    &#9776;
+		  </button>
+		  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+		    <a class="navbar-brand" href="#"><img src="logo.png" class="navbar-brand img-responsive"></a>
+		    <ul class="nav navbar-nav navbar-right">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">About</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Portfolio</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Contact</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+    </nav>
+
+   <main>
+   <Center>
+
+
+  <div class="col-xs-6" id="left">
+  	Hello, I'm Joanne!<br>
+   	<span class="description">Aspiring Front-End Developer</span>
+  </div>
+  <div class="col-xs-6">
+  	<img src="picture.png" id="picture" class="img-responsive">
+  </div>
+
+   </main>
+</div>
+
+<script type="text/javascript">
+	$("#joanne").animate({left: "20%"});
+	$("#hyelee").animate({left: "20%"});
+	$("#kim").animate({left: "42%"});
+
+	$(window).load(function() {
+		function show_slideup() {
+			$("#loading").slideUp(4000);
+		};
+		window.setTimeout(show_slideup, 3000);
+	});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+</body>
+</html>
