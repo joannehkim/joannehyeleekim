@@ -1,7 +1,21 @@
 Rails.application.routes.draw do
 
+  get 'projects/friends'
+
+  get 'projects/ecommerce'
+
+  get 'projects/frame'
+
+  resources :contacts
 
   root 'main#index'
+
+  get '/main/about' => 'main#about'
+
+  get '/main/contact' => 'main#contact'
+
+  get '/main/portfolio' => 'main#portfolio'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <link rel="stylesheet" href="/assets/animate.css">
+  
+
+
+<style type="text/css">
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+/*section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}*/
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 800px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax-2 {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax-3 {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 700px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.module.parallax-2 h1, section.module.parallax-3 h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.module.parallax-1 {
+  background-image: url("/assets/background1.png");
+}
+section.module.parallax-2 {
+  background-image: url("/assets/background2.png");
+}
+section.module.parallax-3 {
+  background-image: url("/assets/background3.png");
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
+}
+.banner {
+	margin-top: -120px;
+  height:;
+}
+.icon {
+	width: 180px;
+}
+.file {
+	height: 100px;
+}
+.files {
+  margin-top: -10px;
+}
+#logos {
+	position: absolute;
+	top: 0;
+	right: 0;
+  padding: 5px;
+}
+#logos img {
+  width: 50px;
+}
+.nav-wrapper {
+ background: none;
+ z-index: 1;
+}
+nav {
+ position: absolute;
+ margin-top: 20px;
+ box-shadow: none;
+}
+#overlay {
+  background-color: rgba(0,0,0,0.5);
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:11;
+}
+#p_button {
+  background-color: black;
+  border-radius: 30px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  border: none;
+  padding: 15px;
+  color: white;
+}
+/*.is_showing {
+  transition: all 0.3 ease-in-out;
+}*/
+figure.about_para {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+figure.is_showing {
+  opacity: 1;
+  animation-duration: 2s;
+/*  transition: all 0.9s ease-in-out;*/
+}
+figure.skills {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+figure.skills.is_showing {
+  opacity: 1;
+  transform: translateX(0px);
+}
+figure.skills_para {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+figure.skills_para.is_showing {
+  opacity: 1;
+  transform: translateX(0px);
+}
+figure.skills_para_after {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+figure.skills_para_after.is_showing {
+  opacity: 1;
+  transform: translateX(0px);
+  margin-left: 10px;
+  animation-delay: 1s;
+}
+</style>
+
+
+</head>
+<body>
+
+  <div id="logos">
+  	<a href="https://github.com/joannehkim"><img src="/assets/github.png" id="github" class="img-responsive logos"></a>
+  	<a href="https://www.linkedin.com/in/joanne-kim-85a07263"><img src="/assets/linkedin.png" class="img-responsive logos"></a>
+  </div>
+
+  <div id="buttons">
+    <a href="/main/portfolio"><button id="p_button"> PORTFOLIO </button></a>
+  </div>
+
+
+<section class="module parallax parallax-1 banner">
+  <div class="container">
+    <h1 id="about" class="animated bounceInDown">About</h1>
+  </div>
+</section>
+
+<section class="module content">
+  <div class="container">
+	<div class="row">
+	<center>
+
+  		<div class="col-md-12">
+      <figure class="about_para">
+  		<img src="/assets/aboutme.png" >
+  		<h5>It all started when I figured out how to change the background color of my Xanga website. Back then, I thought to myself, "I'm a web designer!" Little did I know how challenging and fun it is to create a website from scratch...</h5> <h5>I graduated with a Bachelor's of Science Degree in Family & Consumer Sciences: Design and Merchandising. After graduating, I worked in the fashion industry as a Production Coordinator/Designer. Then I decided to attend Coding Dojo (where I learned 3 full stacks) to further develop my skills.</h5>
+  		</div>
+      </figure>
+	</div>
+  </div>
+</section>
+
+<section class="module parallax parallax-2">
+  <div class="container">
+    <figure class="skills">
+    <h1>Skills</h1>
+    </figure>
+  </div>
+</section>
+
+<section class="module content">
+  <div class="container">
+<div class="row">
+  <center>
+  <figure class="skills_para">
+  <div class="col-md-4">
+  <figure class="skills_logo">
+  <img src="/assets/rubystack.png" class="img-responsive icon"><br>
+  RUBY<br>
+  RAILS<br>
+  RSPEC<br>
+  CAPYBARA<br>
+  POSTGRESQL
+  </figure>
+  </div>
+  <div class="col-md-4">
+  <figure class="skills_logo">
+  <img src="/assets/lampstack.png" class="img-responsive icon"><br>
+  PHP<br>
+  MYSQL<br>
+  CODEIGNITER<br>
+  AJAX<br>
+  JQUERY
+  </figure>
+  </div>
+  <div class="col-md-4">
+  <figure class="skills_logo">
+  <img src="/assets/meanstack.png" class="img-responsive icon"><br>
+  JAVASCRIPT<br>
+  MONGODB<br>
+  ANGULAR<br>
+  NODE.JS<br>
+  EXPRESS.JS
+  </figure>
+  </div>
+</div>
+<br><br>
+
+
+
+<div class="row">
+
+  <center>
+  <div class="col-md-2">
+  </div>
+  <figure class="col-md-12 skills_para_after">
+  <img src="/assets/html5.png" class="img-responsive file files">
+  <img src="/assets/css3.png" class="img-responsive file files">
+  <img src="/assets/photoshop.png" class="img-responsive file">
+  <img src="/assets/illustrator.png" class="img-responsive file">
+  <img src="/assets/sketch.png" class="img-responsive file">
+  <img src="/assets/finalcut.png" class="img-responsive file">
+  </figure>
+  </div>
+  </div>
+  <div class="col-md-2">
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+<section class="module parallax parallax-3">
+  <div class="container">
+    <h1>Facts</h1>
+  </div>
+</section>
+
+<section class="module content" id="about_par">
+
+  <div class="container">
+	<div class="row">
+	<center>
+  		<div class="col-md-12">
+      <img src="/assets/randomfacts.png" class="img-responsive">
+      <p>I was born in Seoul, South Korea.</p>
+      <p>My favorite movie is the Transformers.</p>
+      <p>I collect Funko Pop! Vinyl Figures.</p>
+      <p>I like to play video games.</p>
+      </div>
+	</div>
+  </div>
+</section>
+
+<script type="text/javascript">
+	$(window).scroll(function() {
+
+		var wScroll = $(this).scrollTop();
+
+    console.log(wScroll);
+
+		if(wScroll > $('.about_para').offset().top - 500) {
+			$(".about_para").addClass("animated slideInLeft is_showing");
+		}
+
+    if(wScroll > $('.skills').offset().top - 500) {
+      $(".skills").addClass("animated bounceInDown is_showing");
+    }
+
+    if(wScroll > $('.skills_logo').offset().top - 500) {
+      $(".skills_para").addClass("animated zoomInRight is_showing");
+    }
+
+    if(wScroll > $('.skills_logo').offset().top - 500) {
+      $(".skills_para_after").addClass("animated zoomInRight is_showing");
+    }
+
+
+
+
+
+		// $('.container').css({
+		// 	'transform' : 'translate(0px, '+ wScroll /2 +'%)'
+		// });
+
+		// console.log(wScroll);
+	});
+</script>
+</body>
+</html>

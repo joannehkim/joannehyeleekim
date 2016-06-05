@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en"/>
+<head>
+	<title>Joanne Hyelee Kim</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Joanne Hyelee Kim's Portfolio"/>
+	<meta name="keywords" content="Joanne Hyelee Kim"/>
+<!-- 	<link rel="stylesheet" href="animate.css"> -->
+	<style type="text/css">
+
+		.container {
+			margin-top: -90px;
+		}
+		#loading {
+			background-color: white;
+			height: 100%;
+			width: 100%;
+			position: fixed;
+			z-index: 1;
+			margin-top: 0px;
+			top: 0px;
+			text-align: center;
+		}
+		.navbar {
+    		background: black;
+    		height: 150px;
+		}
+		.navbar-right {
+   			float: right;
+		}
+		@media (max-width: 543px) {
+			.navbar {
+				background: black;
+				height: 80px;
+			}
+			#picture {
+				display: none;
+			}
+			#logos {
+				display: none;
+			}
+			#logo_top {
+				display: none;
+			}
+			.container {
+				margin-top: 50px;
+			}
+		}
+		.navbar-brand>img {
+			width: 200px;
+		}
+		main {
+			height: 100%;
+/*			background-color: red;*/
+			margin-top: 20px;
+		}
+		figure.friends {
+			opacity: 0;
+			transform: translateX(-20px);
+			transition: all 0.9s ease-in-out;
+		}
+		figure.friends:hover img {
+			opacity: 0.4;
+		}
+		figure.is_showing {
+			opacity: 1;
+			transform: translateX(0px);
+		}
+/*		figure.friends figcaption {
+			background-color: pink;
+			overflow: hidden;
+		}*/
+
+
+
+	</style>
+</head>
+<body>
+
+<div id="wrapper">
+	<nav>
+		<nav class="navbar navbar-custom">
+		  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+		    &#9776;
+		  </button>
+		  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+		    <a class="navbar-brand" href="/"><img src="/assets/logo.png" class="navbar-brand img-responsive" id="logo_top"></a>
+		    <ul class="nav navbar-nav navbar-right">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="/main/about" id="about">About</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="/main/portfolio">Portfolio</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="/contacts/new">Contact</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+    </nav>
+
+   <main>
+   <Center>
+
+
+<div id="first_row">
+  <div class="col-md-4">
+  <figure class="friends">
+  	<a href="/projects/friends"><img src="/assets/friends.png"></a>
+  		<figcaption>
+
+  		</figcaption>
+  </figure>
+  </div>
+
+  <div class="col-md-4">
+  <figure class="friends">
+  	<a href="/projects/ecommerce"><img src="/assets/kcpk.png"></a>
+  		<figcaption>
+
+  		</figcaption>
+  </figure>
+  </div>
+
+  <div class="col-md-4">
+  <figure class="friends">
+  	<a href="/projects/frame"><img src="/assets/frame.png"></a>
+  		<figcaption>
+
+  		</figcaption>
+  </figure>
+  </div>
+
+  <div class="col-md-4">
+  <figure class="friends">
+  	<a href="/projects/gold_game"><img src="/assets/gold_game.png"></a>
+  		<figcaption>
+
+  		</figcaption>
+  </figure>
+  </div>
+
+  <div class="col-md-4">
+  <figure class="friends">
+  	<a href="/projects/compass"><img src="/assets/compass.png"></a>
+  		<figcaption>
+
+  		</figcaption>
+  </figure>
+  </div>
+
+  <div class="col-md-4">
+  <figure class="friends">
+  	<a href="/projects/secrets"><img src="/assets/secrets.png"></a>
+  		<figcaption>
+
+  		</figcaption>
+  </figure>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+
+$("#about").animate({left: "20%"});
+	
+	$(document).ready(function() {
+		$('#first_row .friends').each(function(i) {
+
+			setTimeout(function() {
+				$('#first_row .friends').eq(i).addClass('is_showing');
+			}, 180 * (i+1));
+		});
+	});
+
+</script>
+
+
+</body>
+</html>

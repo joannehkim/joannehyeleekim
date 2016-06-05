@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -26,13 +24,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'rails-footnotes', '>= 4.0.0', '<5'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'sprockets-rails', '~> 3.0.4'
 gem 'hirb'
 gem 'inline_svg'
 gem 'greensock-rails', '1.18.0.1'
-gem "animate-rails"
+gem 'animate-rails'
+gem 'mail_form', '~> 1.5.1'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -56,3 +54,11 @@ group :development, :test do
   gem 'spring'
 end
 
+group :development do
+	gem 'sqlite3'
+end
+
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end

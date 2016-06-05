@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en"/>
+<head>
+	<title>Joanne Hyelee Kim</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Joanne Hyelee Kim's Portfolio"/>
+	<meta name="keywords" content="Joanne Hyelee Kim"/>
+	<link rel="stylesheet" href="animate.css">
+	<style type="text/css">
+		body {
+			background-image: url("/assets/background.png");
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+		}
+		.container {
+			margin-top: -90px;
+		}
+		#loading {
+			background-color: white;
+			height: 100%;
+			width: 100%;
+			position: fixed;
+			z-index: 1;
+			margin-top: 0px;
+			top: 0px;
+			text-align: center;
+		}
+		.navbar {
+    		background: transparent;
+    		height: 200px;
+		}
+		.navbar-right {
+   			float: right;
+		}
+		@media (max-width: 543px) {
+			.navbar {
+				background: black;
+				height: 80px;
+			}
+			#picture {
+				display: none;
+			}
+			#logos {
+				display: none;
+			}
+			#logo_top {
+				display: none;
+			}
+			.container {
+				margin-top: 50px;
+			}
+		}
+		.navbar-brand>img {
+			width: 200px;
+		}
+		#left {
+/*			display: inline-block;
+			background:;
+			height: 500px;
+			width: 300px;
+			margin-left: -50px;*/
+			font-size: 2em;
+		}
+		#right {
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 200px;
+		}
+		main {
+			height: 100%;
+/*			background-color: red;*/
+			margin-top: 20px;
+		}
+		#picture {
+    		position:fixed;
+    		bottom:0px;
+    		left:40%;
+		}
+		#intro {
+			display: inline-block;
+			animation-delay: 7s;
+		}
+		#description {
+			display: inline-block;
+			animation-delay: 8s;
+		}
+		.logos {
+			position: absolute;
+			right: 8px;
+/*			bottom: 10px;*/
+			margin-top: 230px;
+			margin-left: 120px;
+			margin-bottom: 10px;
+			height: 60px;
+			position: fixed;
+		}
+/*		.img-responsive {
+			width: 200%;
+			height: auto;
+		}*/
+/*		img {
+			max-width: auto;
+			height: auto;
+		}	*/	
+
+	</style>
+</head>
+<body>
+
+<div id="wrapper">
+	<nav>
+		<nav class="navbar navbar-custom">
+		  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+		    &#9776;
+		  </button>
+		  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+		    <a class="navbar-brand" href="/"><img src="/assets/logo.png" class="navbar-brand img-responsive" id="logo_top"></a>
+		    <ul class="nav navbar-nav navbar-right">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="/main/about" id="about">About</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="/main/portfolio">Portfolio</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="/main/contact">Contact</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+    </nav>
+
+   <main>
+   <Center>
+    <div id="logos">
+  	<a href="https://github.com/joannehkim"><img src="/assets/github.png" id="github" class="img-responsive logos"></a><br><br><br>
+  	<a href="https://www.linkedin.com/in/joanne-kim-85a07263"><img src="/assets/linkedin.png" class="img-responsive logos"></a>
+  </div>
+
+
+<div class="container">
+    <div class="row">
+        <form action="/Users/process_register" method="POST">
+            <div class="col-md-4 col-md-offset-1">
+            	<legend><h3 class="header">Have a Question?<br>Contact me!</h3></legend>
+            </div>
+            <div class="col-md-4 col-md-offset-1">
+                <div class="form-group">
+                    <label for="email">Name:</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="example@domain.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Message:</label>
+
+                    <textarea class="form-control" name="password" id="password"></textarea>
+                </div>
+                <input type="submit" class="btn btn-secondary" id="login_email" name="login_email" value="Submit">
+            </div>
+        </form>
+
+    </div>
+
+</div>
+
+
+
+   </main>
+
+</div>
+</body>
+</html>
