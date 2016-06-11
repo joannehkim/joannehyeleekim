@@ -1,0 +1,1 @@
+$("#joanne").animate({left:"20%"}),$("#hyelee").animate({left:"20%"}),$("#kim").animate({left:"48%"});var initialLoad=!0;$(document).ready(function(){function e(){$("#loading").slideUp(4e3)}window.setTimeout(e,3e3),initialLoad=!1});
