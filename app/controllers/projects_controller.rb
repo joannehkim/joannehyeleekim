@@ -7,4 +7,10 @@ class ProjectsController < ApplicationController
 
   def frame
   end
+
+  def compass
+  end
+
+  def ideas
+  end
 end

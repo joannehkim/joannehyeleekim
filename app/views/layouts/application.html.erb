@@ -1,8 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Portfolio</title>
-	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <meta name="description" content="Joanne Hyelee Kim's Portfolio"/>
+  <meta name="keywords" content="Joanne Hyelee Kim"/>
+  <title>JOANNE HYELEE KIM</title>
+  <link rel="icon" 
+     type="image/png" 
+     href="/assets/jhk.png">
+  <link rel="stylesheet" href="/assets/animate.css">
+  <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -10,6 +18,7 @@
 <body>
 
 <%= yield %>
+<%= yield(:head) %>
 
 </body>
 </html>

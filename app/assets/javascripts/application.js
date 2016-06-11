@@ -3,5 +3,4 @@
 //= require tether
 //= require bootstrap-sprockets
 //= require turbolinks
-//= require indexjs
 //= require_tree .

@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Joanne Hyelee Kim's Portfolio"/>
 	<meta name="keywords" content="Joanne Hyelee Kim"/>
-	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" href="/assets/animate.css">
 	<style type="text/css">
 
 		.container {
@@ -70,7 +70,21 @@
 		.blank {
 			margin-bottom: 80px;
 		}
-
+		figure.friends {
+			opacity: 0;
+			transform: translateX(-20px);
+			transition: all 0.9s ease-in-out;
+		}
+		figure.is_showing {
+			opacity: 1;
+			transform: translateX(0px);
+		}
+		.header {
+			font-size: 4em;
+			border-bottom: 2px solid gray;
+			width: 400px;
+			font-weight: bolder;
+		}
 
 
 	</style>
@@ -102,21 +116,38 @@
 
    <main>
    <Center>
-   <h1>FRAME</h1>
+   <h1 class="header">FRAME</h1>
    <h4>A simple, yet powerful to do application to easily manage tasks.<br>Users can quickly add new events according to category colors.</h4><br>
-   <h6>Created with MEAN stack: Javascript, MongoDB, Angular, Node.JS, Express.JS</h6><br>
+   <h6>Created with MEAN stack: Javascript, MongoDB, Angular, Node.JS, Express.JS, Photoshop, Illustrator, Sketch</h6><br>
+   <div id="pictures">
+   <figure class="friends">
    <img src="/assets/frame01.png" class="examples">
    <img src="/assets/frame02.png" class="examples">
    <img src="/assets/frame03.png" class="examples">
    <img src="/assets/frame04.png" class="examples">
    <img src="/assets/frame05.png" class="examples">
+   </figure>
+   </div>
    <br><br>
 
    <a id="button" href="http://52.39.117.222/">PUBLIC IP (AWS)</a>
    <a id="button" href="https://github.com/joannehkim/mean_project">VIEW ON GITHUB</a>
 </div>
 
+<script type="text/javascript">
 
+	$(document).ready(function() {
+		$('.header').addClass('animated lightSpeedIn');
+
+		$('#pictures .friends').each(function(i) {
+
+			setTimeout(function() {
+				$('#pictures .friends').eq(i).addClass('is_showing');
+			}, 180 * (i+1));
+		});
+	});
+
+</script>
 
 </body>
 </html>

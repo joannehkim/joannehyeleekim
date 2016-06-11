@@ -1,228 +1,55 @@
-<!DOCTYPE html>
-<html lang="en"/>
-<head>
-	<title>Joanne Hyelee Kim</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="Joanne Hyelee Kim's Portfolio"/>
-	<meta name="keywords" content="Joanne Hyelee Kim"/>
-	<link rel="stylesheet" href="animate.css">
-	<style type="text/css">
-		body {
-			background-image: url("background.png");
-			background-size: 100% auto;
-			background-repeat: no-repeat;
-		}
-		#loading {
-			background-color: white;
-			height: 100%;
-			width: 100%;
-			position: fixed;
-			z-index: 1;
-			margin-top: 0px;
-			top: 0px;
-			text-align: center;
-		}
-/*		#loading-center{
-			width: 100%;
-			height: 100%;
-			position: relative;
-		}
-		#loading-center-absolute {
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			height: 200px;
-			width: 200px;
-			margin-top: -200px;
-			margin-left: -200px;
-		}*/
-		div#joanne {
-			position: absolute;
-			left: -400px;
-			margin-top: 100px;
-		}
-		div#hyelee {
-			position: absolute;
-			margin-top: 200px;
-			right: 10%;
-		}
-		div#kim {
-			position: absolute;
-			margin-top: 300px;
-			animation-delay: 3s;
-			text-align: center;
-		}
-		#joanne {
-			animation-duration: 2s;
-		}
-		#kim {
-			animation-duration: 3.5s;
-		}
-		.navbar {
-    		background: transparent;
-    		height: 200px;
-		}
-		.navbar-right {
-   			float: right;
-		}
-		@media (max-width: 543px) {
-			.navbar {
-				background: black;
-				height: 100px;
-			}
-			#picture {
-				display: none;
-			}
-			#logos {
-				display: none;
-			}
-		}
-		.navbar-brand>img {
-			width: 200px;
-		}
-		#left {
-			margin-top: 80px;
-			margin-left: 100px;
-			font-size: 2em;
-		}
-		#right {
-			display: inline-block;
-			vertical-align: top;
-			margin-left: 150px;
-		}
-		main {
-			height: 100%;
-			background: red;
-			margin-top: 30px;
-		}
-		#picture {
-			width: 430px;
-    		position:fixed;
-    		bottom:0px;
-    		left:48%;
-		}
-		#intro {
-			display: inline-block;
-			animation-delay: 7s;
-			animation-iteration-count: 1;
-		}
-		#description {
-			display: inline-block;
-			animation-delay: 8s;
-			animation-iteration-count: 1;
-		}
-		.logos {
-			position: absolute;
-			right: 8px;
-/*			bottom: 10px;*/
-			margin-top: 230px;
-			margin-left: 120px;
-			margin-bottom: 10px;
-			height: 60px;
-			position: fixed;
-		}
-/*		.img-responsive {
-			width: 200%;
-			height: auto;
-		}*/
-/*		img {
-			max-width: auto;
-			height: auto;
-		}	*/	
-
-	</style>
-</head>
-<body>
-
-
-
-<div id="wrapper">
+<div id="wrapper" class="main_background">
 
 <div id="loading">
 	<div id="loading-center">
 		<div id="loading-center-absolute">
-			<div id="joanne"><img src="joanne.png" class="animated slideInLeft img-responsive" id="joanne"></div>
+			<div id="joanne"><%= image_tag('joanne.png', class:'animated slideInLeft img-responsive', id:'joanne') %>
+			</div>
 			<div id="hyelee"><img src="hyelee.png" class="animated slideInRight img-responsive" id="hyelee"></div>
 			<div id="kim"><img src="kim.png" class="animated bounceInDown img-responsive" id="kim"></div>
 		</div>
 	</div>
 </div>
 
-	<nav>
-		<nav class="navbar navbar-custom">
-		  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
-		    &#9776;
-		  </button>
-		  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-		    <a class="navbar-brand" href="#"><img src="logo.png" class="navbar-brand img-responsive"></a>
-		    <ul class="nav navbar-nav navbar-right">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="/main/about" id="about">About</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="/main/portfolio">Portfolio</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="/contacts/new">Contact</a>
-		      </li>
-		    </ul>
-		  </div>
-		</nav>
-    </nav>
+<nav>
+	<nav class="navbar navbar-custom">
+	  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+	    &#9776;
+	  </button>
+	  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+	    <a class="navbar-brand" href="#"><%= image_tag('logo.png', class:'navbar-brand img-responsive') %></a>
+	    <ul class="nav navbar-nav navbar-right main_nav">
+	      <li class="nav-item">
+	        <a class="nav-link" href="/main/about" id="about">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="/main/portfolio">Portfolio</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="/contacts/new">Contact</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+</nav>
 
-   <main>
-   <Center>
-
-
+<main>
+<Center>
   <div class="col-xs-5" id="left">
   	<span class="animated bounceInDown" id="intro">Hello, I'm Joanne!</span><br>
    	<span class="animated bounceInDown" id="description">Aspiring Front-End/UI Developer</span>
   </div>
   <div class="col-xs-4">
-  	<img src="/assets/joannekim.png" id="picture" class="img-responsive">
+  	<%= image_tag('joannekim.png', class:'img-responsive', id:'picture') %>
   </div>
   <div class="col-xs-4" id="logos">
-  	<a href="https://github.com/joannehkim"><img src="/assets/github.png" id="github" class="img-responsive logos"></a><br><br><br>
-  	<a href="https://www.linkedin.com/in/joanne-kim-85a07263"><img src="/assets/linkedin.png" class="img-responsive logos"></a>
+  	<a href="https://github.com/joannehkim"><%= image_tag('github.png', class:'img-responsive logos', id:'github') %></a><br><br><br>
+  	<a href="https://www.linkedin.com/in/joanne-kim-85a07263"><%= image_tag('linkedin.png', class:'img-responsive logos', id:'linkedin') %></a>
   </div>
-   </main>
+</main>
 
 </div>
 
-<script type="text/javascript">
-	$("#joanne").animate({left: "20%"});
-	$("#hyelee").animate({left: "20%"});
-	$("#kim").animate({left: "48%"});
-
-	var initialLoad = true;
-
-	// $(document).ready(function() {
-	// 	initialLoad = false;
-	// })
-
-	// if (initialLoad) {
-		$(document).ready(function() {
-		function show_slideup() {
-			$("#loading").slideUp(4000);
-		};
-		window.setTimeout(show_slideup, 3000);
-		initialLoad = false;
-		});
-	// }
-
-	// $(document).ready(function() {
-	// 	$("#about").click(function() {
-	// 		// event.preventDefault();
-	// 		newLocation = this.href;
-	// 		$("body").fadeOut(3000);
-	// 	});
-
-	// 	function newpage() {
-	// 		window.location = newLocation;
-	// 	}
-	// });
-
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
-</body>
-</html>
+<% content_for(:head) do %>
+	<%= javascript_include_tag 'main_js' %>
+<% end %>

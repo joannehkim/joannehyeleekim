@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Joanne Hyelee Kim's Portfolio"/>
 	<meta name="keywords" content="Joanne Hyelee Kim"/>
-	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" href="/assets/animate.css">
 	<style type="text/css">
 
 		.container {
@@ -70,6 +70,21 @@
 		.blank {
 			margin-bottom: 80px;
 		}
+		figure.friends {
+			opacity: 0;
+			transform: translateX(-20px);
+			transition: all 0.9s ease-in-out;
+		}
+		figure.is_showing {
+			opacity: 1;
+			transform: translateX(0px);
+		}
+		.header {
+			font-size: 4em;
+			border-bottom: 2px solid gray;
+			width: 400px;
+			font-weight: bolder;
+		}
 
 
 
@@ -101,23 +116,40 @@
     </nav>
 
    <main>
-   <Center>
-   <h1>KCPK</h1>
+   <center>
+   <h1 class="header">KCPK</h1>
    <h4>An ecommerce website where users can easily sign up, login, and shop.</h4><br>
-   <h6>Created with LAMP stack: PHP, Apache, MySQL, CodeIgniter, Bootstrap</h6><br>
+   <h6>Created with LAMP stack: PHP, Apache, MySQL, CodeIgniter, Bootstrap, Photoshop, Illustrator</h6><br>
+   <div id="pictures">
+   <figure class="friends">
    <img src="/assets/kcpk01.png" class="examples">
    <img src="/assets/kcpk02.png" class="examples">
    <img src="/assets/kcpk03.png" class="examples">
    <img src="/assets/kcpk04.png" class="examples">
    <img src="/assets/kcpk05.png" class="examples"><br>
    Images Copyright Urban Outfitters (used only for project demonstration)
+   </figure>
+   </div>
    <br><br><br>
 
    <a id="button" href="http://54.187.131.1/">PUBLIC IP (AWS)</a>
    <a id="button" href="https://github.com/joannehkim/Friends">VIEW ON GITHUB</a>
 </div>
 
+<script type="text/javascript">
 
+	$(document).ready(function() {
+		$('.header').addClass('animated lightSpeedIn');
+
+		$('#pictures .friends').each(function(i) {
+
+			setTimeout(function() {
+				$('#pictures .friends').eq(i).addClass('is_showing');
+			}, 180 * (i+1));
+		});
+	});
+
+</script>
 
 </body>
 </html>

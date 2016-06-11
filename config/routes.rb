@@ -6,6 +6,12 @@ Rails.application.routes.draw do
 
   get 'projects/frame'
 
+  get 'projects/gold_game'
+
+  get 'projects/compass'
+
+  get 'projects/ideas'
+
   resources :contacts
 
   root 'main#index'
