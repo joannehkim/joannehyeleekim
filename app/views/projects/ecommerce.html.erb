@@ -31,16 +31,6 @@
 		@media (max-width: 543px) {
 			.navbar {
 				background: black;
-				height: 80px;
-			}
-			#picture {
-				display: none;
-			}
-			#logos {
-				display: none;
-			}
-			#logo_top {
-				display: none;
 			}
 			.container {
 				margin-top: 50px;
@@ -80,12 +70,14 @@
 			transform: translateX(0px);
 		}
 		.header {
-			font-size: 4em;
-			border-bottom: 2px solid gray;
-			width: 400px;
+			font-size: 3.5em;
+			border-bottom: 3px solid gray;
+			width: 80%;
 			font-weight: bolder;
 		}
-
+		#imac {
+			border: none;
+		}
 
 
 	</style>
@@ -98,8 +90,8 @@
 		  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
 		    &#9776;
 		  </button>
-		  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-		    <a class="navbar-brand" href="/"><img src="/assets/logo.png" class="navbar-brand img-responsive" id="logo_top"></a>
+<!-- 		  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2"> -->
+		    <a class="navbar-brand" href="/"><img src="/assets/logo.png" class="navbar-brand img-responsive"></a>
 		    <ul class="nav navbar-nav navbar-right">
 		      <li class="nav-item active">
 		        <a class="nav-link" href="/main/about" id="about">About</a>
@@ -123,7 +115,7 @@
    <h6>Created with LAMP stack: PHP, Apache, MySQL, CodeIgniter, Bootstrap, Photoshop, Illustrator</h6><br>
    <div id="pictures">
    <figure class="friends">
-   <img src="/assets/kcpk1.png" class="examples">
+   <img src="/assets/kcpk_imac.png" class="examples" id="imac"><br><br>
    <img src="/assets/kcpk4.png" class="examples">
    <img src="/assets/kcpk2.png" class="examples">
    <img src="/assets/kcpk3.png" class="examples">

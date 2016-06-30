@@ -1,4 +1,73 @@
-<div id="wrapper" class="main_background">
+	<style type="text/css">
+		body {
+			background-image: url("/assets/background.png");
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+		}
+        @media (min-width: 1500px) {
+            #picture {
+            	width: 700px;
+            }
+            #intro {
+            	margin-top: 170px;
+            	margin-left: 100px;
+            }
+            #description {
+            	margin-left: 100px;
+            }
+        }
+		@media (max-width: 1300px) {
+			.navbar {
+    		background: black;
+    		border-radius: 0px;
+    		height: 150px;
+			}
+		}
+		@media (max-width: 800px) {
+			#picture {
+    		display: none;
+			}
+			#intro {
+				font-size: 1.3em;
+			}
+		}
+		@media (max-width: 543px) {
+			.navbar {
+				background-color: black;
+			}
+			#intro {
+				font-size: 1.5em;
+			}
+			#description {
+				font-size: 1em;
+			}
+			.navbar-toggler {
+				display: none;
+			}
+		}
+		@media (min-width: 1500px) {
+			#joanne {
+				width: 55%;
+				margin-left: -90px;
+				margin-top: 80px;
+			}
+			#hyelee {
+				width: 60%;
+				margin-top: 150px;
+				margin-left: 100px;
+			}
+			#kim {
+				width: 43%;
+				margin-top: 200px;
+				margin-left: -150px;
+			}
+		}
+
+
+		</style>
+
+
+<div id="wrapper">
 
 <div id="loading">
 	<div id="loading-center">
@@ -16,7 +85,7 @@
 	  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
 	    &#9776;
 	  </button>
-	  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+<!-- 	  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2"> -->
 	    <a class="navbar-brand" href="#"><%= image_tag('logo.png', class:'navbar-brand img-responsive') %></a>
 	    <ul class="nav navbar-nav navbar-right main_nav">
 	      <li class="nav-item">

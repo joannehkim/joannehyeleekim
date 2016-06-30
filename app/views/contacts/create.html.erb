@@ -6,104 +6,43 @@
 	<meta name="description" content="Joanne Hyelee Kim's Portfolio"/>
 	<meta name="keywords" content="Joanne Hyelee Kim"/>
 	<link rel="stylesheet" href="animate.css">
-	<style type="text/css">
-		body {
-			background-image: url("/assets/background.png");
-			background-size: 100% auto;
-			background-repeat: no-repeat;
-		}
-		.container {
-			margin-top: -90px;
-		}
-		#loading {
-			background-color: white;
-			height: 100%;
-			width: 100%;
-			position: fixed;
-			z-index: 1;
-			margin-top: 0px;
-			top: 0px;
-			text-align: center;
-		}
-		.navbar {
-    		background: transparent;
-    		height: 200px;
-		}
-		.navbar-right {
-   			float: right;
-		}
-		@media (max-width: 543px) {
-			.navbar {
-				background: black;
-				height: 80px;
-			}
-			#picture {
-				display: none;
-			}
-			#logos {
-				display: none;
-			}
-			#logo_top {
-				display: none;
-			}
-			.container {
-				margin-top: 50px;
-			}
-		}
-		.navbar-brand>img {
-			width: 200px;
-		}
-		#left {
-/*			display: inline-block;
-			background:;
-			height: 500px;
-			width: 300px;
-			margin-left: -50px;*/
-			font-size: 2em;
-		}
-		#right {
-			display: inline-block;
-			vertical-align: top;
-			margin-left: 200px;
-		}
-		main {
-			height: 100%;
-/*			background-color: red;*/
-			margin-top: 20px;
-		}
-		#picture {
-    		position:fixed;
-    		bottom:0px;
-    		left:40%;
-		}
-		#intro {
-			display: inline-block;
-			animation-delay: 7s;
-		}
-		#description {
-			display: inline-block;
-			animation-delay: 8s;
-		}
-		.logos {
-			position: absolute;
-			right: 8px;
-/*			bottom: 10px;*/
-			margin-top: 230px;
-			margin-left: 120px;
-			margin-bottom: 10px;
-			height: 60px;
-			position: fixed;
-		}
-/*		.img-responsive {
-			width: 200%;
-			height: auto;
-		}*/
-/*		img {
-			max-width: auto;
-			height: auto;
-		}	*/	
-
-	</style>
+    <style type="text/css">
+        body {
+            background-image: url("/assets/background.png");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
+        @media (max-width: 1090px) {
+            .navbar {
+            background: black;
+            border-radius: 0px;
+            height: 150px;
+            }
+        }
+        @media (max-width: 800px) {
+            #picture {
+            display: none;
+            }
+            #intro {
+                font-size: 1.3em;
+            }
+        }
+        @media (max-width: 543px) {
+            .navbar {
+                background-color: black;
+                border-radius: 0px;
+            }
+            #intro {
+                font-size: 1.5em;
+            }
+            #description {
+                font-size: 1em;
+            }
+            .navbar-toggler {
+                display: none;
+            }
+        }
+        </style>
 </head>
 <body>
 
@@ -113,8 +52,8 @@
 		  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
 		    &#9776;
 		  </button>
-		  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-		    <a class="navbar-brand" href="/"><img src="/assets/logo.png" class="navbar-brand img-responsive" id="logo_top"></a>
+<!-- 		  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2"> -->
+		    <a class="navbar-brand" href="/"><img src="/assets/logo.png" class="navbar-brand img-responsive"></a>
 		    <ul class="nav navbar-nav navbar-right">
 		      <li class="nav-item active">
 		        <a class="nav-link" href="/main/about" id="about">About</a>

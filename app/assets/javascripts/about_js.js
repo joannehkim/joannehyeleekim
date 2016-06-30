@@ -24,7 +24,7 @@ $(window).scroll(function() {
     $(".facts").addClass("animated bounceInDown is_showing");
   }
 
-  if(wScroll > $('.facts_para').offset().top - 500) {
+  if(wScroll > $('.facts_para').offset().top - 650) {
     $(".facts_para").addClass("animated bounceInLeft is_showing");
   }
 

@@ -41,6 +41,7 @@ div#kim {
 }
 .navbar {
     background: transparent;
+    border-radius: 0px;
     height: 200px;
 }
 .navbar-right {
@@ -51,10 +52,7 @@ div#kim {
     background: black;
     height: 100px;
   }
-  #picture {
-    display: none;
-  }
-  #logos {
+  .navbar-toggler {
     display: none;
   }
 }
@@ -79,17 +77,19 @@ main {
   width: 445px;
     position:fixed;
     bottom:0px;
-    left:48%;
+    left:52%;
 }
 #intro {
   display: inline-block;
-  animation-delay: 7s;
-  animation-iteration-count: 1;
+/*  animation-delay: 7s;
+  animation-iteration-count: 1;*/
+  font-size: 2em;
 }
 #description {
   display: inline-block;
   animation-delay: 8s;
   animation-iteration-count: 1;
+  font-size: 1.3em;
 }
 .logos {
   position: absolute;
@@ -231,6 +231,10 @@ section.module.parallax-3 {
   color: white;
   z-index: 100;
 }
+.abouts {
+  font-size: 2em;
+  width: 100%;
+}
 figure.about_para {
   opacity: 0;
   transform: translateX(-20px);
@@ -292,4 +296,7 @@ figure.facts_para.is_showing {
   margin-left: 15px;
   margin-right: 10px;
   margin-top: -6px;
+}
+@media all and (min-width: 1024px) {
+
 }

@@ -24,6 +24,7 @@
 		.navbar {
     		background: black;
     		height: 150px;
+    		border-radius: 0px;
 		}
 		.navbar-right {
    			float: right;
@@ -31,20 +32,13 @@
 		@media (max-width: 543px) {
 			.navbar {
 				background: black;
-				height: 80px;
-			}
-			#picture {
-				display: none;
-			}
-			#logos {
-				display: none;
-			}
-			#logo_top {
-				display: none;
 			}
 			.container {
 				margin-top: 50px;
 			}
+            .navbar-toggler {
+                display: none;
+            }
 		}
 		.navbar-brand>img {
 			width: 200px;
@@ -54,13 +48,30 @@
 /*			background-color: red;*/
 			margin-top: 20px;
 		}
+		figure {
+			overflow: hidden;
+		}
 		figure.friends {
 			opacity: 0;
 			transform: translateX(-20px);
 			transition: all 0.9s ease-in-out;
+			overflow: hidden;
+			width: 90%;
 		}
 		figure.friends:hover img {
-			opacity: 0.4;
+			opacity: 0.3;
+		}
+		figcaption {
+			width: 80%;
+			position: absolute;
+			bottom: -5em;
+			font-size: 2em;
+			opacity: 0;
+		}
+		figure:hover figcaption {
+			bottom: 45%;
+			left: 10%;
+			opacity: 1;
 		}
 		figure.is_showing {
 			opacity: 1;
@@ -70,8 +81,21 @@
 			background-color: pink;
 			overflow: hidden;
 		}*/
-
-
+		.friends img {
+			width: 100%;
+		}
+		.friends a {
+			color: black;
+		}
+		.border {
+			border: 3px solid black;
+		}
+		#first_row {
+			width: 90%;
+			height: auto;
+			position: relative;
+			overflow: hidden;
+		}
 
 	</style>
 </head>
@@ -83,11 +107,11 @@
 		  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
 		    &#9776;
 		  </button>
-		  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-		    <a class="navbar-brand" href="/"><img src="/assets/logo.png" class="navbar-brand img-responsive" id="logo_top"></a>
+<!-- 		  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2"> -->
+		    <a class="navbar-brand" href="/"><img src="/assets/logo.png" class="navbar-brand img-responsive"></a>
 		    <ul class="nav navbar-nav navbar-right">
 		      <li class="nav-item active">
-		        <a class="nav-link" href="/main/about" id="about">About</a>
+		        <a class="nav-link" href="/main/about">About</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="/main/portfolio">Portfolio</a>
@@ -106,57 +130,66 @@
 
 <div id="first_row">
 
-  <div class="col-md-4">
+  <div class="col-md-4 picture">
   <figure class="friends">
-  	<a href="/projects/compass"><img src="/assets/compass.png"></a>
-  		<figcaption>
-
-  		</figcaption>
+  	<a href="/projects/wireframes"><img src="/assets/wireframes_p.png" class='border' id='wireframes'></a>
+  		<a href="/projects/wireframes"><figcaption>
+  		WIREFRAMES
+  		</figcaption></a>
   </figure>
   </div>
 
   <div class="col-md-4">
   <figure class="friends">
-  	<a href="/projects/ecommerce"><img src="/assets/kcpk.png"></a>
-  		<figcaption>
-
-  		</figcaption>
+  	<a href="/projects/compass"><img src="/assets/compass_p.png" class='border'></a>
+  		<a href="/projects/compass"><figcaption>
+  		COMPASS
+  		</figcaption></a>
   </figure>
   </div>
 
   <div class="col-md-4">
   <figure class="friends">
-  	<a href="/projects/frame"><img src="/assets/frame.png"></a>
-  		<figcaption>
-
-  		</figcaption>
+  	<a href="/projects/ecommerce"><img src="/assets/kcpk_p.png" class='border'></a>
+  		<a href="/projects/ecommerce"><figcaption>
+  		KCPK
+  		</figcaption></a>
   </figure>
   </div>
 
   <div class="col-md-4">
   <figure class="friends">
-  	<a href="/projects/gold_game"><img src="/assets/gold_game.png"></a>
-  		<figcaption>
-
-  		</figcaption>
+  	<a href="/projects/frame"><img src="/assets/frame_p.png" class='border'></a>
+  		<a href="/projects/frame"><figcaption>
+  		FRAME
+  		</figcaption></a>
   </figure>
   </div>
 
   <div class="col-md-4">
   <figure class="friends">
-  	<a href="/projects/friends"><img src="/assets/friends.png"></a>
-  		<figcaption>
-
-  		</figcaption>
+  	<a href="/projects/gold_game"><img src="/assets/gold_p.png" class='border'></a>
+  		<a href="/projects/gold_game"><figcaption>
+  		GOLD GAME
+  		</figcaption></a>
   </figure>
   </div>
 
   <div class="col-md-4">
   <figure class="friends">
-  	<a href="/projects/ideas"><img src="/assets/ideas.png"></a>
-  		<figcaption>
+  	<a href="/projects/friends"><img src="/assets/friends_p.png" class='border'></a>
+  		<a href="/projects/friends"><figcaption>
+  		FRIENDS
+  		</figcaption></a>
+  </figure>
+  </div>
 
-  		</figcaption>
+  <div class="col-md-4">
+  <figure class="friends">
+  	<a href="/projects/ideas"><img src="/assets/ideas_p.png" class='border'></a>
+  		<a href="/projects/ideas"><figcaption>
+  		IDEAS
+  		</figcaption></a>
   </figure>
   </div>
 
@@ -173,6 +206,10 @@ $("#about").animate({left: "20%"});
 				$('#first_row .friends').eq(i).addClass('is_showing');
 			}, 180 * (i+1));
 		});
+
+		// $('#wireframes').hover(function() {
+		// 		$('.caption').addClass('animated bounceInDown');
+		// });
 	});
 
 </script>

@@ -7,6 +7,7 @@
 	<meta name="keywords" content="Joanne Hyelee Kim"/>
 	<link rel="stylesheet" href="/assets/animate.css">
 	<style type="text/css">
+
 		.container {
 			margin-top: -90px;
 		}
@@ -23,6 +24,7 @@
 		.navbar {
     		background: black;
     		height: 150px;
+    		border-radius: 0px;
 		}
 		.navbar-right {
    			float: right;
@@ -30,6 +32,9 @@
 		@media (max-width: 543px) {
 			.navbar {
 				background: black;
+			}
+			#picture {
+				display: none;
 			}
 			.container {
 				margin-top: 50px;
@@ -44,9 +49,11 @@
 			margin-bottom: 100px;
 		}
 		.examples {
-			width: 80%;
-			border: 4px solid black;
+			width: 90%;
 			margin-bottom: 10px;
+		}
+		.mobile {
+			width: 60%;
 		}
 		#button {
 			background-color: black;
@@ -83,9 +90,9 @@
 <div id="wrapper">
 	<nav>
 		<nav class="navbar navbar-custom">
-		  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+<!-- 		  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
 		    &#9776;
-		  </button>
+		  </button> -->
 <!-- 		  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2"> -->
 		    <a class="navbar-brand" href="/"><img src="/assets/logo.png" class="navbar-brand img-responsive"></a>
 		    <ul class="nav navbar-nav navbar-right">
@@ -104,22 +111,16 @@
     </nav>
 
    <main>
-   <Center>
-   <h1 class="header">IDEAS</h1>
-   <h4>An application where users can post ideas and view ideas posted by other users. Users can like or unlike posts and delete his/her own posts. Users can also view other users' profiles and see the list of people who liked each post.</h4><br>
-   <h6>Created with RUBY stack: Ruby, Rails, PostgreSQL, Bootstrap</h6><br>
+   <center>
+   <h1 class="header">WIREFRAMES KIT</h1>
+   <h4>Wireframe templates created for faster workflow.</h4>
+   <h4>Created with Adobe Illustrator + Sketch 3</h4>
    <div id="pictures">
    <figure class="friends">
-   <img src="/assets/ideas01.png" class="examples">
-   <img src="/assets/ideas02.png" class="examples">
-   <img src="/assets/ideas03.png" class="examples">
-   <img src="/assets/ideas04.png" class="examples">
+   <img src="/assets/wireframes.png" class="examples">
+   <img src="/assets/wireframes2.png" class="mobile"><br>
    </figure>
-   </div><br>
-   <br><br><br>
-
-   <a id="button" href="http://52.25.28.100">PUBLIC IP (AWS)</a>
-   <a id="button" href="https://github.com/joannehkim/ideas">VIEW ON GITHUB</a>
+   </div>
 </div>
 
 <script type="text/javascript">

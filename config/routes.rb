@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get 'projects/ideas'
 
+  get 'projects/wireframes'
+
   resources :contacts
 
   root 'main#index'

@@ -31,20 +31,19 @@
 		@media (max-width: 543px) {
 			.navbar {
 				background: black;
-				height: 80px;
 			}
-			#picture {
-				display: none;
-			}
-			#logos {
+/*			#logos {
 				display: none;
 			}
 			#logo_top {
 				display: none;
-			}
+			}*/
 			.container {
 				margin-top: 50px;
 			}
+            .navbar-toggler {
+                display: none;
+            }
 		}
 		.navbar-brand>img {
 			width: 200px;
@@ -80,12 +79,14 @@
 			transform: translateX(0px);
 		}
 		.header {
-			font-size: 4em;
-			border-bottom: 2px solid gray;
-			width: 400px;
+			font-size: 3.5em;
+			border-bottom: 3px solid gray;
+			width: 80%;
 			font-weight: bolder;
 		}
-
+		#mac {
+			border: none;
+		}
 
 	</style>
 </head>
@@ -96,9 +97,9 @@
 		<nav class="navbar navbar-custom">
 		  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
 		    &#9776;
-		  </button>
-		  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-		    <a class="navbar-brand" href="/"><img src="/assets/logo.png" class="navbar-brand img-responsive" id="logo_top"></a>
+		  </button><!-- 
+		  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2"> -->
+		    <a class="navbar-brand" href="/"><img src="/assets/logo.png" class="navbar-brand img-responsive"></a>
 		    <ul class="nav navbar-nav navbar-right">
 		      <li class="nav-item active">
 		        <a class="nav-link" href="/main/about" id="about">About</a>
@@ -122,6 +123,7 @@
    <h6>Created with RUBY stack: Ruby, Rails, PostgreSQL, Materialize, Photoshop, Illustrator, Final Cut Pro</h6><br>
    <div id="pictures">
    <figure class="friends">
+   <img src="/assets/compass_mac.png" class="examples" id="mac"><br><br>
    <img src="/assets/compass01.png" class="examples">
    <img src="/assets/compass07.png" class="examples">
    <img src="/assets/compass02.png" class="examples">
